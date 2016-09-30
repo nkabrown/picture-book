@@ -23,5 +23,6 @@ def get_weather(station_id):
         writer.writerow(headers)
         writer.writerows(list_of_rows)
 
+# 4 character noaa weather station id listed at http://forecast.weather.gov/stations.php
 get_weather("KLGA")
 
