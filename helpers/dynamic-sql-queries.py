@@ -1,7 +1,7 @@
 # helper for constructing range query strings from a range of column values
-def range_query(start, end, value_list, column_name):
-	start_index = value_list.index(start)
-	end_index = value_list.index(end)
+def range_query(start_value, end_value, value_list, column_name):
+	start_index = value_list.index(start_value)
+	end_index = value_list.index(end_value)
 	selected_values = value_list[start_index:end_index + 1]
 	query_string = ""
 	for value in selected_values:
