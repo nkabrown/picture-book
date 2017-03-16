@@ -1,4 +1,4 @@
-# from http://stackoverflow.com/questions/29663187/csv-to-json-using-jq
+# from http://stackoverflow.com/questions/29663187/csv-to-json-using-jq stackoverflow user: 997358/peak
 # example command: jq -R -s -f csv2json.jq csv.csv > csv.json 
 
 # objectify/1 takes an array of string values as inputs, converts
