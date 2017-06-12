@@ -9,8 +9,6 @@ class scrapeISOCodes:
     def scrape(self):
         page = requests.get(self.url)
         tree = html.fromstring(page.content)
-        table = tree.xpath('//table[contains(@class, "wikitable")]')
-        rows = tree.xpath('//tr')
         language_names = tree.xpath('//tr/td[position()=3]/a[position()=1]/text()')
         two_letter_codes = tree.xpath('//tr/td[position()=5]/text()')
         self.write_to_csv(language_names, two_letter_codes)
